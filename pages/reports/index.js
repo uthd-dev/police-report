@@ -25,6 +25,7 @@ export default function AllReports() {
 function ReportCards(data) {
     console.log(data.data.reports);
     let reports = data.data.reports;
+    if(reports.length == 0) return <Message>No Reports Today!</Message>
     let cards = reports.map(report => {
         return <ReportCard id={report._id} date={report.createdOn} location={report.location} />
     })
