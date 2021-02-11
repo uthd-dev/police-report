@@ -42,10 +42,10 @@ export default function ReportsPage() {
           <Map mapLat={data.location.lat} mapLng={data.location.lng} />
         </div>
         <div className="flex flex-col justify-center m-5 w-1/4">
-          <DataText title="Locality: " data={data.location.locality}/>
-          <DataText title="Latitude: " data={data.location.lat}/>
-          <DataText title="Longitude: " data={data.location.lng}/>
-          <DataText title="Date Created: " data={data.createdOn}/>
+          <DataText title="Locality" data={data.location.locality}/>
+          <DataText title="Latitude" data={data.location.lat.toFixed(2)}/>
+          <DataText title="Longitude" data={data.location.lng.toFixed(2)}/>
+          <DataText title="Date Created" data={data.createdOn}/>
         </div>
       </div>
       <Link href="/reports">Back to Reports</Link>
@@ -56,7 +56,7 @@ export default function ReportsPage() {
 function DataText({ title, data }) {
   return (
     <motion.p
-      className="font-mono m-5"
+      className="font-mono mb-3 sm:m-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}

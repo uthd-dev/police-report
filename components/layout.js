@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <motion.div
       layout
-      className="flex w-screen min-h-screen h-auto bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 bg-fixed p-5"
+      className="flex w-screen min-h-screen bg-cover h-auto bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 bg-fixed p-5"
     >
       <div className="container m-auto bg-gray-50 w-full h-auto rounded-lg shadow-lg p-5 sm:p-20 ">
         <p className="text-sm text-black text-center text-opacity-50 font-mono">
