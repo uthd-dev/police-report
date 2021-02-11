@@ -30,7 +30,7 @@ function ReportCards(data) {
         return <ReportCard id={report._id} date={report.createdOn} location={report.location} />
     })
     return (
-        <div className="h-auto w-auto mt-3 mb-3">
+        <div className="h-full w-full mt-3 mb-3">
             {cards}
         </div>
     );
